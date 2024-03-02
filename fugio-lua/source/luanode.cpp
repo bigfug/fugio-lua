@@ -210,9 +210,7 @@ void LuaNode::inputsUpdated( qint64 pTimeStamp )
 
 		if( true )
 		{
-			QString		 DatDir = QStandardPaths::writableLocation( QStandardPaths::DocumentsLocation );
-
-			QString		 LuaUsr = QDir( DatDir ).absoluteFilePath( "Fugio/share/lua" );
+			QString		 LuaUsr = LuaPlugin::instance()->app()->dataPath().absoluteFilePath( "share/lua" );
 
 			if( QFileInfo::exists( LuaUsr ) )
 			{
