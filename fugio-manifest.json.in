@@ -1,0 +1,19 @@
+{
+  "author": "Alex May",
+  "contact": "https://github.com/bigfug",
+  "homepage": "https://github.com/bigfug",
+  "description": "Lua plugins for Fugio",
+  "identifier": "com.bigfug.fugio.lua",
+  "plugins": {
+	"com.bigfug.fugio.lua": {
+	  "1.0.0": {
+		"win64": "@FUGIO_PLUGIN_URL@/fugio-lua-win64.zip"
+	  }
+	},
+	"com.bigfug.fugio.luaqt": {
+	  "1.0.0": {
+		"win64": "@FUGIO_PLUGIN_URL@/fugio-luaqt-win64.zip"
+	  }
+	}
+  }
+}
