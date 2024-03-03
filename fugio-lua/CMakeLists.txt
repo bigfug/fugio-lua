@@ -84,6 +84,8 @@ endif()
 #------------------------------------------------------------------------------
 # Lua
 
+add_dependencies( ${PROJECT_NAME} lua )
+
 target_include_directories( ${PROJECT_NAME} PRIVATE ${CMAKE_BINARY_DIR}/lua/include )
 
 target_link_libraries( ${PROJECT_NAME} PRIVATE ${CMAKE_BINARY_DIR}/lua/lib/lua_shared.lib )
@@ -92,7 +94,7 @@ target_compile_definitions( ${PROJECT_NAME} PRIVATE LUA_SUPPORTED )
 
 install( FILES
 	${CMAKE_BINARY_DIR}/lua/bin/lua_shared.dll
-	DESTINATION ${PATH_APP}
+	DESTINATION ${PATH_SHARE}/libs
 	COMPONENT ${PROJECT_NAME}
 )
 
