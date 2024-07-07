@@ -30,8 +30,6 @@
 
 using namespace fugio;
 
-QList<QUuid>	NodeControlBase::PID_UUID;
-
 LuaPlugin		*LuaPlugin::mInstance = 0;
 
 static const char NodeKey = 'k';

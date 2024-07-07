@@ -41,8 +41,6 @@
 #include "luamatrix.h"
 #include "luabytearray.h"
 
-QList<QUuid>	NodeControlBase::PID_UUID;
-
 fugio::GlobalInterface		*LuaQtPlugin::mApp = Q_NULLPTR;
 LuaQtPlugin					*LuaQtPlugin::mInstance = Q_NULLPTR;
 
